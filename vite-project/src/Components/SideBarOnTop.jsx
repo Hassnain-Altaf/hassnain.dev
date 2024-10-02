@@ -184,7 +184,7 @@ function SideBarOnTop() {
 
    <Box>
        <Typography style={{fontSize:'12px' , color:'white'}}>EMAIL</Typography>
-       <Box><a href="mailto:hassnainalvi0@gmail.com" class="contact-link" style={{color:'#C3BA8C' , fontSize:'14px', fontWeight:'bold' , overflow:'hidden'}} >Hassnainaltaf72@gmail.com</a>
+       <Box><a href="mailto:hassnainalvi0@gmail.com" class="contact-link" style={{color:'#C3BA8C' , fontSize:'14px', fontWeight:'bold' , overflow:'hidden'}} >Hassnainalvi0@gmail.com</a>
        </Box>
    </Box>
    </InfoWrapper>
