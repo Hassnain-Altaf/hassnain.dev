@@ -1,9 +1,16 @@
 
 import React, { useState } from 'react';
 import { Box, Divider, Typography, styled } from '@mui/material';
-// const facebookApiUrl = import.meta.env.VITE_FACEBOOK_API_URL;
-// const githubApiUrl = import.meta.env.VITE_GitHub_API_URL;
-// const linkedInApiUrl = import.meta.env.VITE_LinkedIn_API_URL;
+
+
+import ProfileImage from "../../src/assets/Profile-img.jpeg";
+import PhoneSvg from "../../src/assets/phone.svg" ;
+import CalendarSvg from "../../src/assets/calendar-fold.svg" ;
+import MapSvg from "../../src/assets/map-pinned.svg" ;
+import FacebookSvg from "../../src/assets/facebook.svg" ;
+import  LinkedInSvg  from "../../src/assets/facebook.svg";
+import  GitHubSvg  from "../../src/assets/github.svg";
+import  InstagramSvg  from "../../src/assets/instagram.svg";
 
 // Environment Variables
 const facebookApiUrl = import.meta.env.VITE_FACEBOOK_API_URL;
@@ -149,7 +156,7 @@ function SideBarOnTop() {
 
       <ProfileSection>
         <ProfileContainer>
-          <StyleProfileImage src="../../src/assets/Profile-img.jpeg" alt="profile-image" />
+          <StyleProfileImage src={ProfileImage} alt="profile-image" />
         </ProfileContainer>
         
         <Box>
@@ -183,7 +190,7 @@ function SideBarOnTop() {
 {/* ============== > 2nd < ================= */}
 <InfoWrapper>
    <ImageBox>
-     <img src="../../src/assets/phone.svg" alt="phone-Icon" style={{  color: 'white' , height:'16px' , width:'16px' , fontWeight:'550' }} />
+     <img src={PhoneSvg} alt="phone-Icon" style={{  color: 'white' , height:'16px' , width:'16px' , fontWeight:'550' }} />
    </ImageBox> 
 
    <Box>
@@ -198,7 +205,7 @@ function SideBarOnTop() {
    {/* ========== > 3rd < ============= */}
    <InfoWrapper>
    <ImageBox >
-     <img src="../../src/assets/calendar-fold.svg" alt="calendar-Icon" style={{ color: 'white' , height:'16px' , width:'16px' ,   }} />
+     <img src={CalendarSvg} alt="calendar-Icon" style={{ color: 'white' , height:'16px' , width:'16px' ,   }} />
    </ImageBox> 
 
    <Box>
@@ -212,7 +219,7 @@ function SideBarOnTop() {
    {/* ========== > 4th < ============= */}
    <InfoWrapper>
    <ImageBox >
-     <img src="../../src/assets/map-pinned.svg" alt="locatiom-Icon" style={{  color: 'white' , height:'16px' , width:'16px' ,  }} />
+     <img src={MapSvg} alt="locatiom-Icon" style={{  color: 'white' , height:'16px' , width:'16px' ,  }} />
    </ImageBox> 
 
    <Box>
@@ -227,16 +234,16 @@ function SideBarOnTop() {
    <hr style={{margin:'1rem 3rem' , }}></hr>
    <Box style={{display:'flex' , justifyContent:'center' , margin:'1.5rem 3rem 1rem 3rem'}} >
        <span > 
-       <a href={facebookApiUrl || '#'} target='_blank'  rel='noopener noreferrer'>   <SoicalMedia src="../../src/assets/facebook.svg" alt="facebook-logo" title='visit-facebook'/> </a>
+       <a href={facebookApiUrl || '#'} target='_blank'  rel='noopener noreferrer'>   <SoicalMedia src={FacebookSvg} alt="facebook-logo" title='visit-facebook'/> </a>
        </span>
        <span > 
-       <a href={linkedInApiUrl || '#'}  target='_blank' rel='noopener noreferrer'>   <SoicalMedia src="../../src/assets/Linkedin.svg" alt="linkedin-logo" title='visit-linkedin'/> </a>
+       <a href={linkedInApiUrl || '#'}  target='_blank' rel='noopener noreferrer'>   <SoicalMedia src={LinkedInSvg} alt="linkedin-logo" title='visit-linkedin'/> </a>
        </span>
        <span>
-       <a href={githubApiUrl || '#'}  target='_blank' rel='noopener noreferrer' >   <SoicalMedia src="../../src/assets/github.svg" alt="github-logo" title='visit-github' /> </a>
+       <a href={githubApiUrl || '#'}  target='_blank' rel='noopener noreferrer' >   <SoicalMedia src={GitHubSvg} alt="github-logo" title='visit-github' /> </a>
        </span>
        <span >
-           <a href='/' style={{color:'#C3BA8C'}} target='_blank' rel='noopener noreferrer'> <SoicalMedia src="../../src/assets/instagram.svg" alt="insta-logo" title='visit-instagram'/>  </a>
+           <a href='/' style={{color:'#C3BA8C'}} target='_blank' rel='noopener noreferrer'> <SoicalMedia src={InstagramSvg} alt="insta-logo" title='visit-instagram'/>  </a>
        </span>
    </Box>
 
