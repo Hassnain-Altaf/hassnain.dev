@@ -7,7 +7,8 @@ import PhoneSvg from "../../src/assets/phone.svg" ;
 import CalendarSvg from "../../src/assets/calendar-fold.svg" ;
 import MapSvg from "../../src/assets/map-pinned.svg" ;
 import FacebookSvg from "../../src/assets/facebook.svg" ;
-import  LinkedInSvg  from "../../src/assets/facebook.svg";
+import MailSvg from "../../src/assets/mail.svg" ;
+import  LinkedInSvg  from "../../src/assets/linkedin.svg";
 import  GitHubSvg  from "../../src/assets/github.svg";
 import  InstagramSvg  from "../../src/assets/instagram.svg";
 
@@ -152,7 +153,7 @@ function SideBar() {
            {/* ============== > 1st < ================= */}
             <InfoWrapper>
             <ImageBox>
-              <img src="../../src/assets/mail.svg" alt="mail-Icon" style={{  color: 'white' , height:'16px' , width:'16px' ,  }} />
+              <img src={MailSvg} alt="mail-Icon" style={{  color: 'white' , height:'16px' , width:'16px' ,  }} />
             </ImageBox> 
 
             <Box>
