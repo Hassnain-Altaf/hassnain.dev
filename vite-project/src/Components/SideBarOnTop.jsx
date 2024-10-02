@@ -197,7 +197,7 @@ function SideBarOnTop() {
    <Box>
        <Typography style={{fontSize:'12px' , color:'white'}}>PHONE</Typography>
        <Box>
-       <Typography style={{color:'#C3BA8C' , fontWeight:'550' , fontSize:'15px' }}>+92 305-12345</Typography>
+       <Typography style={{color:'#C3BA8C' , fontWeight:'550' , fontSize:'15px' }}>+92 305-4337998</Typography>
        {/* <a href="tel:+923054332213" alt="contact-link">+92 305-4332213</a> */}
        </Box>
    </Box>
